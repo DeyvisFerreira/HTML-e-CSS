@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portifólio Ágil- Scrum Team </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <h1> Portifólio Ágil </h1>
+    <h2> Scrum Team: Machine Learnin's Ágil </h2>
+  </header>
+  <main>
+
+    <section id="formulário">
+      <h3>Dados do Scrum Team</h3>
+      <form action="#">
+
+        <label for="Nome-scrum-team">Nome do Scrum Team:</label>
+        <input type="text" id="Nome-scrum-team" name="Nome-scrum-team" required>
+        <label for="justificativa">Justificativa do Nome:</label>
+        <textarea id="Justificativa" name="Justificativa" required></textarea>
+        <label for="membros">Membros do Scrum:</label>
+        <ul id="membros">
+          <li>
+            <label for="membro-1-nome">Nome:</label>
+            <input type="text" id="membro-1-nome" name="membro-1-nome" required>
+            <label for="membro-1-cargo">Cargo:</label>
+            <select id="membro-1-cargo" name="membro-1-cargo">
+              <option value="scrum Master">Scrum Master</option>
+              <option value="product Owner">Product Owner</option>
+              <option value="developer full-stack">Developer Full-Stack</option>
+              <option value="developer front end">Desenvolvedor Front-End</option>
+              <option value="engenheiro de Software">Engenheiro de Software</option>
+              <option value="software-egineer">Software Engineer</option>
+              <option valeu="analista de dados">Analista de Dados</option>
+              <option valeu="especialista de segurança">Especialista de Segurança</option>
+              <option valeu="designer-ux-u">Designer-UX/U</option>
+              <option valeu="devops-egnineer">DevOps Engineer</option>
+            </select>
+          </li>
+        </ul>
+
+        <label for="daily-meeting">Dia e horário da Daily Meeting:</label>
+        <input type="text" id="daily-meeting" name="daily-meeting" required>
+        <label for= "data-apresentação">Data e hora da apresentação:</label>
+        <input type="date" id="data-apresentação" name="data-apresentação" required>
+        <label for="timebox-pitch">Timebox Pitch:</label>
+        <input type="number" id="timebox-pitch" name="timebox-pitch" required>
+        <label for="membros-apresentaçaõ">Membros que farão a Apresentação:</label>
+        <select id="membros-apresentação" name="membros-apresentação" multiple>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>  
+    </section>
+
+    <select id="membros-apresentação" name="membros-apresentação" multiple>
+
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+  </section>
+
+  <section id="dados-scrum-team">
+
+  </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
